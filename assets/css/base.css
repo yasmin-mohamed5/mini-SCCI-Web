@@ -1,0 +1,436 @@
+/* ===============================================================================
+   BASE.CSS — COMPLETE DESIGN SYSTEM
+   =============================================================================== */
+
+:root {
+  /* ================================
+     🎨 BRAND COLORS
+  ===================================*/
+  --color-primary-dark: #8b0a1a;
+  --color-primary: #c41e3a;
+  --color-primary-light: #d63d50;
+  --color-primary-lighter: #e85d6d;
+  --color-primary-very-light: #f4d3d8;
+  --color-primary-hover: #b91d34;
+
+  --color-secondary-dark: #0a1340;
+  --color-secondary: #1a1a4d;
+  --color-secondary-light: #2a3a6b;
+  --color-secondary-lighter: #3d4a8f;
+  --color-secondary-very-light: #e6eaf5;
+
+  /* ================================
+     ⚪ NEUTRALS
+  ===================================*/
+  --color-black: #1a1a1a;
+  --color-gray-dark: #444444;
+  --color-gray-medium: #666666;
+  --color-gray-light: #999999;
+  --color-gray-lighter: #cccccc;
+  --color-white-neutral: #f5f5f5;
+  --color-white: #ffffff;
+
+  /* ================================
+     🚦 STATUS COLORS
+  ===================================*/
+  --color-success: #27ae60;
+  --color-warning: #f39c12;
+  --color-error: #e74c3c;
+  --color-info: #3498db;
+
+  /* ================================
+     🔤 TEXT SYSTEM
+  ===================================*/
+  --text-main: var(--color-black);
+  --text-muted: var(--color-gray-medium);
+  --text-light: var(--color-gray-light);
+  --text-invert: var(--color-white);
+
+  /* ================================
+     🧱 BORDERS & SHADOWS
+  ===================================*/
+  --border-light: #e0e0e0;
+  --border-dark: #444444;
+
+  --shadow-light: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-medium: 0 6px 16px rgba(0,0,0,0.12);
+  --shadow-strong: 0 12px 24px rgba(0,0,0,0.18);
+
+  /* ================================
+     🟦 BUTTONS SYSTEM
+  ===================================*/
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-hover: var(--color-primary-hover);
+  --btn-primary-text: var(--color-white);
+
+  --btn-secondary-bg: var(--color-secondary);
+  --btn-secondary-hover: var(--color-secondary-light);
+  --btn-secondary-text: var(--color-white);
+
+  --btn-outline-border: var(--color-primary);
+  --btn-outline-text: var(--color-primary);
+  --btn-outline-hover-bg: var(--color-primary-light);
+  --btn-outline-hover-text: var(--color-white);
+
+  --btn-soft-bg: var(--color-primary-very-light);
+  --btn-soft-text: var(--color-primary);
+  --btn-soft-hover-bg: var(--color-primary-lighter);
+
+  /* ================================
+     🃏 CARDS SYSTEM
+  ===================================*/
+  --card-bg: var(--color-white);
+  --card-bg-dark: var(--color-secondary-dark);
+  --card-border: var(--color-gray-lighter);
+  --card-radius: 14px;
+  --card-padding: 18px;
+  --card-shadow: var(--shadow-light);
+  --card-header-bg: var(--color-secondary-very-light);
+  --card-hover-shadow: var(--shadow-medium);
+
+  /* ================================
+     📌 COMPONENT BACKGROUNDS
+  ===================================*/
+  --body-bg: var(--color-white);
+  --section-bg: var(--color-white-neutral);
+  --section-bg-alt: var(--color-secondary-very-light);
+  --section-dark-bg: var(--color-secondary-dark);
+
+  /* ================================
+     📏 SPACING SYSTEM
+  ===================================*/
+  --space-1: 0.4rem;
+  --space-2: 0.8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.6rem;
+  --space-5: 2rem;
+  --space-6: 2.4rem;
+  --space-7: 3.2rem;
+  --space-8: 4rem;
+  --space-9: 4.8rem;
+  --space-10: 6.4rem;
+
+  /* ================================
+     🔤 TYPOGRAPHY
+  ===================================*/
+  --fs-xs: 1.2rem;
+  --fs-sm: 1.4rem;
+  --fs-base: 1.6rem;
+  --fs-md: 1.8rem;
+  --fs-lg: 2rem;
+  --fs-xl: 2.4rem;
+  --fs-2xl: 3.2rem;
+  --fs-3xl: 4rem;
+  --fs-4xl: 4.8rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-loose: 1.8;
+
+  /* ================================
+     🔘 BORDER RADIUS
+  ===================================*/
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-round: 50%;
+
+  /* ================================
+     ⚡ TRANSITIONS
+  ===================================*/
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===============================================================================
+   🌙 DARK MODE
+   =============================================================================== */
+
+.dark-mode {
+  /* Text */
+  --text-main: var(--color-white-neutral);
+  --text-muted: var(--color-gray-light);
+  --text-light: var(--color-gray-lighter);
+  --text-invert: var(--color-black);
+
+  /* Backgrounds */
+  --body-bg: #0d0d1a;
+  --section-bg: var(--color-secondary-dark);
+  --section-bg-alt: var(--color-secondary);
+  --card-bg: #12122b;
+  --card-header-bg: var(--color-secondary);
+
+  /* Borders */
+  --border-light: var(--color-secondary-light);
+  --card-border: var(--color-secondary-light);
+
+  /* Shadows */
+  --shadow-light: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-medium: 0 6px 16px rgba(0,0,0,0.5);
+  --shadow-strong: 0 12px 24px rgba(0,0,0,0.6);
+
+  /* Buttons adjustments */
+  --btn-soft-bg: var(--color-secondary-light);
+  --btn-soft-text: var(--color-primary-lighter);
+  --btn-outline-text: var(--color-primary-lighter);
+  --btn-outline-border: var(--color-primary-lighter);
+
+  /* Scrollbar */
+  --scrollbar-track: var(--color-secondary-dark);
+  --scrollbar-thumb: var(--color-primary);
+}
+
+/* ===============================================================================
+   🔧 BASE RESET
+   =============================================================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-base);
+  color: var(--text-main);
+  background-color: var(--body-bg);
+  line-height: var(--lh-normal);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* ===============================================================================
+   ✨ SELECTION & SCROLLBAR
+   =============================================================================== */
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-gray-lighter);
+  border-radius: 8px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background-color: var(--color-secondary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ===============================================================================
+   🔗 LINKS & IMAGES
+   =============================================================================== */
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===============================================================================
+   📝 TYPOGRAPHY
+   =============================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-3);
+}
+
+h1 { font-size: var(--fs-4xl); }
+h2 { font-size: var(--fs-3xl); }
+h3 { font-size: var(--fs-2xl); }
+h4 { font-size: var(--fs-xl); }
+h5 { font-size: var(--fs-lg); }
+h6 { font-size: var(--fs-md); }
+
+p {
+  margin-bottom: var(--space-4);
+  color: var(--text-muted);
+}
+
+/* ===============================================================================
+   📦 CONTAINER
+   =============================================================================== */
+
+.container {
+  width: min(100% - var(--space-6), 120rem);
+  margin-inline: auto;
+}
+
+/* ===============================================================================
+   🔘 BUTTONS
+   =============================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.btn-secondary:hover {
+  background: var(--btn-secondary-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--btn-outline-text);
+  border: 2px solid var(--btn-outline-border);
+}
+
+.btn-outline:hover {
+  background: var(--btn-outline-hover-bg);
+  color: var(--btn-outline-hover-text);
+}
+
+.btn-soft {
+  background: var(--btn-soft-bg);
+  color: var(--btn-soft-text);
+}
+
+.btn-soft:hover {
+  background: var(--btn-soft-hover-bg);
+}
+
+/* ===============================================================================
+   🃏 CARDS
+   =============================================================================== */
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--card-hover-shadow);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  background: var(--card-header-bg);
+  padding: var(--space-4);
+  margin: calc(var(--card-padding) * -1);
+  margin-bottom: var(--space-4);
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+/* ===============================================================================
+   📐 UTILITY CLASSES
+   =============================================================================== */
+
+
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-muted { color: var(--text-muted); }
+
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-section { background-color: var(--section-bg); }
+
+
+ul {
+  list-style: none;
+}
+
+  /* ============================================= 
+     THEME TOGGLE 
+  ============================================= */
+        .theme-toggle {
+            position: fixed;
+            bottom: var(--space-6);
+            left: var(--space-6);
+            width: 5.6rem;
+            height: 5.6rem;
+            background: var(--color-primary);
+            border: none;
+            border-radius: var(--radius-round);
+            cursor: pointer;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(196, 30, 58, 0.4);
+            transition: all var(--transition-normal);
+        }
+        .theme-toggle:hover { transform: scale(1.1) rotate(15deg); box-shadow: 0 6px 30px rgba(196, 30, 58, 0.5); }
+        .theme-toggle:active { transform: scale(0.95); }
+        .theme-toggle .icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            color: var(--color-white);
+            position: absolute;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .theme-toggle .sun-icon { opacity: 1; transform: rotate(0deg) scale(1); }
+        .theme-toggle .moon-icon { opacity: 0; transform: rotate(-90deg) scale(0.5); }
+        .dark-mode .theme-toggle { background: var(--color-secondary-lighter); box-shadow: 0 4px 20px rgba(61, 74, 143, 0.5); }
+        .dark-mode .theme-toggle:hover { box-shadow: 0 6px 30px rgba(61, 74, 143, 0.6); }
+        .dark-mode .theme-toggle .sun-icon { opacity: 0; transform: rotate(90deg) scale(0.5); }
+        .dark-mode .theme-toggle .moon-icon { opacity: 1; transform: rotate(0deg) scale(1); }

@@ -122,8 +122,8 @@ const Components = (function () {
                     </li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="workshops.html">Workshops</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul>
                     <li>

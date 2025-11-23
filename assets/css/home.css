@@ -1,0 +1,53 @@
+.hero{
+    text-align: center;
+    height: calc(100vh - 2*(var(--space-8))); 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+    gap: var(--space-2);
+    align-items: center;
+    margin: var(--space-8) auto;
+  
+}
+
+.imge-hero{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: var(--space-8);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+.imge-hero img {
+    /* animation fidup */
+    animation: fidup 3s ease-in-out infinite;
+  }
+  
+  @keyframes fidup {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+ /* ========================================================================================== */
+ /* ========================================= section about ========================================= */
+
+ .about{
+    text-align: center;
+    height: 50vh ; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+    gap: var(--space-2);
+    align-items: center;
+    margin: var(--space-8) auto;
+  
+}

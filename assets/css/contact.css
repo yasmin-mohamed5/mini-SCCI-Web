@@ -152,7 +152,7 @@ form{
 
 /* ================================= media query ================================ */
 
-@media (max-width: 920px) {
+@media (max-width: 780px) {
     /* =================== intro ================= */
     .contact-intro h1{
         font-size: var(--fs-xl);

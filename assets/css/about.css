@@ -182,12 +182,20 @@ padding: auto;
     height: 40vw;
   }
 }
+.link{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
 
 /* FINAL CTA */
 .final-cta {
   text-align: center;
   padding: 10% 1%;
 }
+
+
 @media (max-width: 800px) {
   .subtext {
     max-width: 90%;

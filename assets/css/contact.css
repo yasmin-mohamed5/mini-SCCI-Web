@@ -185,7 +185,7 @@ form{
     /* ===================== form ======================= */
     .form-container{
         width: fit-content;
-        margin-top: var(--space-6);
+        margin-top: var(--space-9);
         
     }
 

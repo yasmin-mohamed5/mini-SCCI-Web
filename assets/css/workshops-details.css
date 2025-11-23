@@ -84,6 +84,12 @@
     box-shadow: var(--shadow-strong);
 }
 
+.members-cards .card .fa-brands {
+    color: #0f6fff;
+    font-size: 1.2em;
+    width: 20px;
+    height: 20px;
+}
 
 @media screen and (max-width: 768px) {
     .members-cards {

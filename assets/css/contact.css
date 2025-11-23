@@ -18,8 +18,16 @@
     margin: var(--space-7) auto;
     border: 2px solid var(--btn-secondary-hover);
     border-radius: var(--radius-xl);
-    padding: 10%;
+    padding: 5%;
 
+}
+
+.contact-intro h1{
+    font-size: var(--fs-3xl);
+}
+
+.contact-intro h3{
+    font-size: var(--fs-lg);
 }
 
 
@@ -143,12 +151,14 @@ form{
 /* ================================= media query ================================ */
 
 @media (max-width: 920px) {
+    /* =================== intro ================= */
     .contact-intro h1{
-        font-size: var(--fs-2xl);
+        font-size: var(--fs-xl);
     }
-    .contact-intro{
-        font-size: var(--fs-lg);
+    .contact-intro h3{
+        font-size: var(--fs-sm);
     }
+    /* ============== git in touch================= */
     .container{
         display: flex;
         flex-direction: column;
@@ -158,6 +168,21 @@ form{
         
     }
 
+    .get-in-touch{
+        align-items: center;
+    }
+
+    .cards-grid{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .get-in-touch h2{
+        font-size: var(--fs-2xl);
+        
+    }
+
+
+    /* ===================== form ======================= */
     .form-container{
         width: fit-content;
         margin-top: var(--space-6);

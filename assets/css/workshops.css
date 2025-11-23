@@ -1,0 +1,234 @@
+
+.workshops-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.workshops-title h2{
+    color: var(--color-primary);
+    margin-bottom: 2%;
+}
+
+.dark-mode .workshops-title h2{
+    color: var(--color-primary);
+}
+
+.dark-mode .workshops-title p{
+    color: white;
+}
+
+.workshops-title p{
+    text-align: center;
+    margin: auto 20%;
+    margin-bottom: 40px !important;
+}
+
+.workshops{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    height: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+.card h4{
+    margin-bottom: 30px;
+}
+
+.card:hover{
+    background-color: var(--color-primary-very-light);
+}
+
+.dark-mode .card:hover{
+    background-color: #2a3a6b;
+}
+
+.card p{
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dark-mode .card p{
+    text-align: center;
+    color: white;
+}
+
+.card button{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+    display: flex;
+    margin-top: auto;
+}
+
+.card a{
+    display: flex;
+    margin-top: auto;
+}
+
+.workshops img{
+    margin-bottom: auto;
+    width: 200px;
+    height: auto;
+}
+
+/* Container styling */
+.workshop-table {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+/* Table base */
+.workshop-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--color-bg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.dark-mode .workshop-table table{
+    background: var(--color-secondary-dark);
+}
+
+/* Header */
+.workshop-table thead th {
+    background: var(--color-primary, #4a4a4a);
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+
+/* Body cells */
+.workshop-table td {
+    padding: 14px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Last row border removal */
+.workshop-table tr:last-child td {
+    border-bottom: none;
+}
+
+.workshop-table tbody tr:nth-child(even) {
+    background: rgb(233, 232, 232);
+}
+
+/* Alternate row background (zebra effect) */
+.dark-mode .workshop-table tbody tr:nth-child(even) {
+    background: var(--color-secondary);
+}
+
+/* Hover modern effect */
+.workshop-table tbody tr:hover {
+    background: var(--color-primary-very-light);
+    transition: 0.2s ease-in-out;
+}
+
+.dark-mode .workshop-table tbody tr:hover {
+    background: var(--color-secondary-light);
+    transition: 0.2s ease-in-out;
+}
+
+/* Make stars gold */
+.workshop-table td:nth-child(2) {
+    color: #f4c632;
+    font-size: 16px;
+}
+
+/* Rounded corners for first and last cells */
+.workshop-table td:first-child {
+    font-weight: 500;
+}
+
+.why-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.why-section h3{
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.dark-mode .why-section p{
+    color: white;
+}
+
+.learning-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20%;
+}
+
+.learning-section h4{
+    font-weight: bold;
+}
+
+
+.learning-section ul {
+    display: flex;
+    flex-direction: row; /* horizontal layout */
+    gap: 60px; /* use px instead of % for predictable spacing */
+    list-style: circle; /* remove bullets */
+    flex-wrap: nowrap; /* keep items on one line */
+    padding: 0; /* remove default padding */
+    margin: 1%; /* remove default margin */
+}
+
+.learning-section ul li {
+    font-weight: bold;
+    font-size: large;
+    white-space: nowrap; /* prevent words from breaking */
+    margin-bottom: 3%;
+}
+
+.learning-section ul li::marker {
+    color: red; /* change bullet color */
+    font-size: larger; /* change bullet size */
+}
+
+.highlight-text-auto {
+    color: var(--color-white);
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary) 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateX(-50px); /* start off-screen left */
+    transition: opacity 0.8s ease, background-size 0.8s ease, transform 0.8s ease;
+}
+
+/* When visible */
+.highlight-text-auto.visible {
+    background-size: 100% 100%;
+    opacity: 1;
+    transform: translateX(0);
+}

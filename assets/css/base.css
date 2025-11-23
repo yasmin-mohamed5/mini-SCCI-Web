@@ -257,14 +257,20 @@ a {
   transition: color var(--transition-fast);
 }
 
-a:hover {
-  color: var(--color-primary-dark);
-}
+
 
 img {
   max-width: 100%;
   display: block;
 }
+.sub-title{
+    text-align: center;
+    color: var(--color-primary);
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-4);
+    opacity: 0.8;
+  }
+  
 
 /* ===============================================================================
    📝 TYPOGRAPHY

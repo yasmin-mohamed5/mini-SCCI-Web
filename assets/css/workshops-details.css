@@ -1,6 +1,21 @@
 .details h1 {
     text-align: center;
-    margin-top: var(--space-9);
+    margin-top: 14rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.details-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.details-img {
+    width: 37rem;
+    padding-top: var(--space-10);
+    animation: fidup 3s ease-in-out infinite;
 }
 
 .details h2 {
@@ -12,7 +27,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
-    padding-top: var(--space-9);
+    padding-top: 14rem;
 }
 
 .details-content p {
@@ -21,7 +36,7 @@
 }
 
 .tools {
-    padding-top: var(--space-10);
+    padding-top: 14rem;
     padding-bottom: var(--space-10);
 }
 
@@ -52,7 +67,7 @@
 
 /* Members section */
 .members {
-    margin-top: var(--space-9);
+    margin-top: 14rem;
 }
 
 
@@ -84,6 +99,70 @@
     box-shadow: var(--shadow-strong);
 }
 
+.members-cards .card .fa-brands {
+    color: #0f6fff;
+    font-size: 1.2em;
+    width: 20px;
+    height: 20px;
+}
+
+/* Table section */
+.workshop-table {
+    margin: 40px auto;
+    padding-top: 14rem;
+}
+
+.workshop-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--color-bg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.dark-mode .workshop-table table {
+    background: var(--color-secondary-dark);
+}
+
+.workshop-table thead th {
+    background: var(--color-primary, #4a4a4a);
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+
+.workshop-table td {
+    padding: 14px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.workshop-table tr:last-child td {
+    border-bottom: none;
+}
+
+.workshop-table tbody tr:nth-child(even) {
+    background: rgb(233, 232, 232);
+}
+
+.dark-mode .workshop-table tbody tr:nth-child(even) {
+    background: var(--color-secondary);
+}
+
+.workshop-table tbody tr:hover {
+    background: var(--color-primary-very-light);
+    transition: 0.2s ease-in-out;
+}
+
+.dark-mode .workshop-table tbody tr:hover {
+    background: var(--color-secondary-light);
+    transition: 0.2s ease-in-out;
+}
+
 
 @media screen and (max-width: 768px) {
     .members-cards {
@@ -93,5 +172,20 @@
 
     .list-card {
         font-size: 1.4rem;
+    }
+
+}
+
+@keyframes fidup {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

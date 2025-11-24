@@ -39,7 +39,7 @@ Huge appreciation for the entire team — your collaboration made this project p
 | **Yasmin Rashid** | Front-End | *(https://www.linkedin.com/in/yasmin-mohamed-8a312b357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)* |
 | **Maryem** | Front-End | *(https://eg.linkedin.com/in/mariam-mohamed-96ab57372)* |
 | **Sarah Zawal** | Front-End + Backend | *(https://www.linkedin.com/in/sarah-zawal-/)* |
-| **Radwan** | Backend | *(add link)* |
+| **Radwan** | Backend | *(http://linkedin.com/in/mohamed-radwan-876602242/)* |
 
 ---
 

@@ -65,6 +65,7 @@
 
       <div class="card">
         <img src="assets/images/workshop-icons/Techsolve.png">
+        <h4>TechSolve – Embedded Systems & Hardware</h4>
         <p> We Combine Hardware With Software Using Arduino And Hardware Components</p>
         <a href="workshops-details.html#techsolve"><button class="btn">Read more</button></a>
       </div>
@@ -136,6 +137,101 @@
         <li>Meet  Professional Mentors</li>
       </ul>
     </section>
+    
+    <section class="quiz-section">
+      <h3>Find Your Perfect Workshop</h3>
+
+      <form id="workshopQuiz">
+
+        <!-- Q1 -->
+        <div class="question">
+          <p>1. Which activity sounds most fun?</p>
+          <label><input type="radio" name="q1" value="dev"> Building mobile apps</label>
+          <label><input type="radio" name="q1" value="design"> Designing websites or UI/UX</label>
+          <label><input type="radio" name="q1" value="biz"> Marketing strategies</label>
+          <label><input type="radio" name="q1" value="biz2"> Starting a business / entrepreneurship</label>
+          <label><input type="radio" name="q1" value="iot"> Working with hardware & electronics</label>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question">
+          <p>2. What describes you best?</p>
+          <label><input type="radio" name="q2" value="dev"> Logical & problem-solver</label>
+          <label><input type="radio" name="q2" value="design"> Creative thinker</label>
+          <label><input type="radio" name="q2" value="biz"> Marketing minded</label>
+          <label><input type="radio" name="q2" value="biz2"> Leadership & entrepreneur mindset</label>
+          <label><input type="radio" name="q2" value="iot"> Hands-on builder</label>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question">
+          <p>3. What career excites you most?</p>
+          <label><input type="radio" name="q3" value="dev"> Mobile developer</label>
+          <label><input type="radio" name="q3" value="design"> UI/UX designer</label>
+          <label><input type="radio" name="q3" value="biz"> Digital marketing expert</label>
+          <label><input type="radio" name="q3" value="biz2"> Entrepreneur / startup founder</label>
+          <label><input type="radio" name="q3" value="iot"> Robotics/IOT engineer</label>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question">
+          <p>4. How do you prefer to learn?</p>
+          <label><input type="radio" name="q4" value="dev"> By building apps</label>
+          <label><input type="radio" name="q4" value="design"> Visually & creatively</label>
+          <label><input type="radio" name="q4" value="biz"> By practicing marketing strategies</label>
+          <label><input type="radio" name="q4" value="biz2"> By experimenting and planning businesses</label>
+          <label><input type="radio" name="q4" value="iot"> By building and testing hardware</label>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question">
+          <p>5. Which type of project excites you?</p>
+          <label><input type="radio" name="q5" value="dev"> Mobile apps</label>
+          <label><input type="radio" name="q5" value="design"> Websites & UI/UX designs</label>
+          <label><input type="radio" name="q5" value="biz"> Marketing campaigns</label>
+          <label><input type="radio" name="q5" value="biz2"> Business startup projects</label>
+          <label><input type="radio" name="q5" value="iot"> Hardware & electronics builds</label>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question">
+          <p>6. What skills do you want to improve?</p>
+          <label><input type="radio" name="q6" value="dev"> App development</label>
+          <label><input type="radio" name="q6" value="design"> Creativity & design</label>
+          <label><input type="radio" name="q6" value="biz"> Marketing skills</label>
+          <label><input type="radio" name="q6" value="biz2"> Entrepreneurial skills</label>
+          <label><input type="radio" name="q6" value="iot"> Hardware & electronics</label>
+        </div>
+
+        <!-- Q7 -->
+        <div class="question">
+          <p>7. Which environment motivates you?</p>
+          <label><input type="radio" name="q7" value="dev"> Quiet coding space</label>
+          <label><input type="radio" name="q7" value="design"> Creative studio / design lab</label>
+          <label><input type="radio" name="q7" value="biz"> Marketing team</label>
+          <label><input type="radio" name="q7" value="biz2"> Startup hub / business incubator</label>
+          <label><input type="radio" name="q7" value="iot"> Workshop / lab</label>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question">
+          <p>8. Which describes your tech level?</p>
+          <label><input type="radio" name="q8" value="dev"> Intermediate / developer</label>
+          <label><input type="radio" name="q8" value="design"> Beginner / designer</label>
+          <label><input type="radio" name="q8" value="biz"> Beginner / marketer</label>
+          <label><input type="radio" name="q8" value="biz2"> Entrepreneur / beginner</label>
+          <label><input type="radio" name="q8" value="iot"> Advanced / hardware</label>
+        </div>
+
+        <button type="button" id="submitQuiz">See My Workshop</button>
+      </form>
+
+      <div id="quizResult"></div>
+    </section>
+
+
+
+
     <script src="assets/js/workshops.js"></script>
      <!-- dont touch !! -->
     <script src="assets/js/components.js"></script>

@@ -603,15 +603,66 @@ footer div{
 
 }
 
-#scci-footer-description{
-    padding: 0 30px 0;
+.dark-mode footer p{
+  color: white;
+  width: 70%;
+  text-align: center;
 }
+
+#scci-footer-description{
+    padding: 0 0px 0;
+    margin-bottom: 0;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.copyright{
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 1.5%;
+}
+
+.social-media a{
+  width: 40px;
+  height: auto;
+  padding-bottom: 0;
+}
+
+.facebook{
+  fill: var(--color-primary);
+}
+
+.instagram{
+  fill: var(--color-primary);
+  margin-left: 10px;
+}
+
+.tiktok{
+  fill: var(--color-primary);
+}
+
+.dark-mode .instagram{
+  fill: var(--color-white);
+}
+
+.dark-mode .facebook{
+  fill: var(--color-white);
+}
+
+.dark-mode .tiktok{
+  fill: var(--color-white);
+}
+
 
 footer hr{
     color: var(--color-primary);
     width: 90%;
 }
-
 
 @media(max-width: 800px){
     .hideOnMobile{

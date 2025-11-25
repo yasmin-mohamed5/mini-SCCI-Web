@@ -194,25 +194,45 @@
 
 .learning-section ul {
     display: flex;
-    flex-direction: row; /* horizontal layout */
-    gap: 60px; /* use px instead of % for predictable spacing */
-    list-style: circle; /* remove bullets */
-    flex-wrap: nowrap; /* keep items on one line */
-    padding: 0; /* remove default padding */
-    margin: 1%; /* remove default margin */
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    gap: 25px 40px; /* vertical and horizontal spacing */
+    list-style: circle;
+    padding: 0;
+    margin: 1%;
 }
 
 .learning-section ul li {
     font-weight: bold;
-    font-size: large;
-    white-space: nowrap; /* prevent words from breaking */
-    margin-bottom: 3%;
+    font-size: 1em;
+    white-space: nowrap;
 }
 
 .learning-section ul li::marker {
-    color: red; /* change bullet color */
-    font-size: larger; /* change bullet size */
+    color: red;
+    font-size: 1.3rem;
 }
+
+/* TABLETS */
+@media (max-width: 768px) {
+    .learning-section ul {
+        justify-content: center; /* center items */
+        gap: 20px 30px;
+    }
+}
+
+/* PHONES */
+@media (max-width: 480px) {
+    .learning-section ul {
+        flex-direction: column; /* stack items vertically */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .learning-section ul li {
+        font-size: 1rem;
+    }
+}
+
 
 .highlight-text-auto {
     color: var(--color-white);
@@ -232,3 +252,140 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+/* QUIZ CONTAINER */
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.quiz-section h3 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* EACH QUESTION BOX */
+.quiz-section .question {
+    border: 2px solid var(--color-primary);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 420px;
+    background: transparent;
+    text-align: left;
+}
+
+/* QUESTION TITLE */
+.quiz-section .question p {
+    font-weight: bold;
+    font-size: larger;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+/* LABEL STYLING */
+.quiz-section label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* BUTTON STYLING */
+.quiz-section button {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 10px 18px;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.quiz-section button:hover {
+    color: white;
+    background-color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* RESULT BOX CONTAINER */
+#quizResult {
+    margin-top: 18px;
+    display: none; /* hidden until result is shown */
+    width: 100%;
+    max-width: 460px;
+    text-align: center;
+}
+
+/* INNER RESULT BOX */
+.quiz-result-box {
+    color: black; /* normal result text */
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ERROR MESSAGE */
+.quiz-result-box.error {
+    color: red;
+}
+
+/* DARK MODE RESULT BOX */
+.dark-mode .quiz-result-box {
+    background-color: var(--color-secondary-light);
+    color: white;
+}
+
+.dark-mode .quiz-result-box.error {
+    color: red;
+}
+
+/* DARK MODE QUESTION BOX */
+.dark-mode .quiz-section .question {
+    border-color: var(--color-primary);
+    background: transparent;
+}
+
+.dark-mode .quiz-section .question p {
+    color: white;
+}
+
+.dark-mode .quiz-section p{
+    color: var(--color-white);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .quiz-section {
+        padding: 10px;
+    }
+
+    .quiz-section .question {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .quiz-result-box {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+
+
+
+

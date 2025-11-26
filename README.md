@@ -34,7 +34,7 @@ Huge appreciation for the entire team — your collaboration made this project p
 
 | Name | Role | Link |
 |------|---------|------|
-| ** Mahmoud Awad (Team Leader)** | Front-End / UI System | https://github.com/AwadCoding |
+| **Mahmoud Awad (Team Leader)** | Front-End / UI System | https://github.com/AwadCoding |
 | **Abdelrahman Rassmy** | Front-End | *(https://www.linkedin.com/in/abdelrahman-rassmy-057153346/)* |
 | **Yasmin Mohamed** | Front-End | *(https://www.linkedin.com/in/yasmin-mohamed-8a312b357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)* |
 | **Mariem Mohamed** | Front-End | *(https://eg.linkedin.com/in/mariam-mohamed-96ab57372)* |
